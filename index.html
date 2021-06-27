@@ -1,13 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <title>Scribbler Project</title>
 
 <head>
     <!-- TODO: Include Font Awesome file here -->
     <!-- TODO: Include Google Fonts file here -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+
 </head>
 
 <body>
     <!-- TODO: Include all your code for the header and home page here -->
+    <div class="header">
+        
+        <div class="flexButtons">
+            <div>
+                <button class="topButtons" id="SIGN IN">Sign In</button>
+                
+                <div id="ModalB" class="Modal">
+                    <div class="Modal-Content">
+                        <span class="close">x</span>
+                        <div class="signin-form">
+                            <form class="form">
+                                <h1 class="heading">Welcome Back!</h1>
+                                <hr>
+                                <label class="labelText">Username</label>
+                                <input type="text" placeholder="Enter Username" required>
+                                <label id="password1">Password</label>
+                                <input type="password" placeholder="Enter Password" required>
+                                <button class="submit-butt">Sign In</button>
+                                <div class="login-form">
+                                    <h4 class="login">Not a member?</h5>
+                                    <span>
+                                        <a class="SignUp" href="#">Sign Up</a>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                    
+                <button class="topButtons" id="SIGN UP">Sign Up</button>
+
+                <div id="ModalA" class="Modal">
+                    <div class="Modal-Content">
+                        <span class="close">x</span>
+                        <div class="signup-form">
+                            <form class="form" id="form">
+                                <h1 class="heading">Get Started</h1>
+                                <hr>
+                                <label class="labelText">Full Name</label>
+                                <input type="text" placeholder="Enter Full Name" required>
+                                <label class="labelText">Username</label>
+                                <input type="text" placeholder="Enter Username" required>
+                                <label id="password" class="labelText">Password</label>
+                                <input type="password" placeholder="Enter Password" required>
+                                <label class="labelText" id="confirm-password">Confirm-password</label>
+                                <input type="password" placeholder="Confirm Password" required>
+                                <button class ="submit-butt">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+        </div>
+        <a id="pageTitle" class="logo-title">ScriBBler</a>
+        <p class="middleText">Explore. Imagine. Create</p>
+    </div>
+
+
+    <div class="Post-button">
+             <div>
+                <button class="Post-but" id="firstbutton">All Posts</button>
+
+            </div>
+            <div>
+                <button class="Post-but" id="secondbutton">Create Posts</button>
+                <div>
+                <div id="ModalC" class="Modal">
+                    <div class="modalcontent-posts">
+                        <span class="close">x</span>
+                        <div class="Createposts-form">
+                            <form class="form">
+                                <h1 class="heading">Pen Your Post</h1>
+                                <hr>
+                                <label class="labelText">Title:</label>
+                                <input type="text" class="Title-create">
+                                <label class="labelText">Content:</label>
+                                <textarea class="Textarea-create"></textarea>
+                                <button class="Create">Create</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    
+
+    <script src="./js/header.js"></script>
+    <script src="./js/index.js"></script>
+
+    
 </body>
 
 </html>
