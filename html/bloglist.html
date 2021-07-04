@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <!-- TODO: Include Google Fonts file here -->
+    <title>Bloglist page</title>
+
+    <meta charset="utf-8">
+    <link href="https://unpkg.com/tailwindcss@2.2.4/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bloglist.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <script src="https://kit.fontawesome.com/843f31a33f.js" crossorigin="anonymous"></script>
+    
+    
+    
+
+</head>
+
+<body>
+    <!-- TODO: Include code for header here -->
+
+    <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
+
+    <!-- list of all posts starts here -->
+
+    <div class="header">
+        
+        <div class="flexButtons">
+            <div>
+                <button class="topButtons" id="SIGN IN">Sign In</button>
+    
+                    <div id="ModalB" class="Modal">
+                        <div class="Modal-Content">
+                            <span class="close">x</span>
+                            <div class="signin-form">
+                                <form class="form">
+                                    <h1 class="heading">Welcome Back!</h1>
+                                    <hr>
+                                    <label class="labelText">Username</label>
+                                    <input type="text" placeholder="Enter Username" required>
+                                    <label id="password1">Password</label>
+                                    <input type="password" placeholder="Enter Password" required>
+                                    <button class="submit-butt">Sign In</button>
+                                    <div class="login-form">
+                                        <h5 class="login">Not a member?</h5>
+                                        <span>
+                                            <a class="SignUp" href="#">Sign Up</a>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div>
+                <button class="topButtons" id="SIGN UP">Sign Up</button>
+                <div id="ModalA" class="Modal">
+                    <div class="Modal-Content">
+                        <span class="close">x</span>
+                        <div class="signup-form">
+                            <form class="form" id="form">
+                                <h1 class="heading">Get Started</h1>
+                                <hr>
+                                <label class="labelText">Full Name</label>
+                                <input type="text" placeholder="Enter Full Name" required>
+                                <label class="labelText">Username</label>
+                                <input type="text" placeholder="Enter Username" required>
+                                <label id="password" class="labelText">Password</label>
+                                <input type="password" placeholder="Enter Password" required>
+                                <label class="labelText" id="confirm-password">confirm-password</label>
+                                <input type="password" placeholder="Confirm Password" required>
+                                <button class ="submit-butt">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+        <a id="pageTitle" class="logo-title" >ScriBBler</a>
+        <p class="middleText">Explore. Imagine. Create</p>
+    </div>
+
+    <div class="bloglist-content">
+        <div class="flex space-x-24 m-10">
+            <div class="flexbox">
+                <div class="flex items-center ml-5 br-0">
+                    <h6>Jimi Hendrix</h6>
+                </div>
+                <div class="bg-gray-200 shadow-xl rounded-r-3xl mt-0  pl-3 ml-7 pr-16"> 
+                    <div class="flex flex-row-reverse pt-4 pl-10" id="delete">
+                        
+                        <i class="fas fa-trash-alt" aria-hidden="true"> 
+                            
+                        </i>
+
+
+                    
+                    </div>
+                    <div class="block text-2xl pb-3 pt-4">
+                       <p class="font-bold">Hello there ! This is Post 1. </p>
+                    </div>
+                    <p>To say that Jimi Hendrix life revolved around music would not be an overstatement. Becoming an entirely different person on stage, the eccentrically dressed guitar wizard was shy and quiet as soon as.</p>
+                    <br>
+                    <div class="flex flex-row-reverse pb-4 pl-0">
+                        <a href="./post.html">
+                            <i class="fas fa-ellipsis-h" aria-hidden="true"></i>
+                        </a>
+                           
+                        </i>
+                    </div>
+                </div> 
+            </div>  
+            <div class="flexbox">
+                <div class="flex items-center ml-5 br-0">
+                    <h6>Jimi Hendrix</h6>
+                </div>
+                <div class="bg-gray-200 shadow-xl rounded-r-3xl mt-0 pl-3 ml-7 pr-16"> 
+                    <div class="flex flex-row-reverse pt-4 pl-10" id="delete">
+                        <i class="fas fa-trash-alt" aria-hidden="true"> 
+
+                            
+                        </i>
+
+                        
+                    </div>
+                    <div class="block text-2xl pb-3 pt-4">
+                       <p class="font-bold">Hello there ! This is Post 2.</p>
+                    </div>
+                    <p>But oh, could the guitar talk. I think the best example is the performance of The Star Spangled Banner opening his Woodstock performance.Going on after heavy rains shook the epic music festival.</p>
+                    <br>
+                    <div class="flex flex-row-reverse pb-4">
+                        <a href="./post.html">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex space-x-24 m-10">
+            <div class="flexbox">
+                <div class="flex items-center ml-5 br-0">
+                    <h6>Jimi Hendrix</h6>
+                </div>
+                <div class="bg-gray-200 shadow-2xl rounded-r-3xl mt-0 pl-3 ml-7 pr-16"> 
+                    <div class="flex flex-row-reverse pt-4 pl-10" id="delete">
+                        <i class="fas fa-trash-alt" aria-hidden="true"> 
+                            
+                        </i>
+
+                        
+                    </div>
+                    <div class="block text-2xl pb-3 pt-4">
+                       <p class="font-bold">Hello there ! This is post 3.</p>
+                    </div>
+                    <p>Jimi did not need to set his guitar on fire to set it on fire. His rendition of the US national anthem is haunting to this day. Amidst the raging Vietnam war and the Civil Rights Movement, Hendrix spoke without word his guitar taking.</p>
+                    <br>
+                    <div class="flex flex-row-reverse pb-5">
+                        <a href="./post.html">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </a>
+                    </div>
+                </div> 
+            </div>  
+            <div class="flexbox">
+                <div class="flex items-center ml-5 br-0">
+                    <h6>Jimi Hendrix</h6>
+                </div>
+                <div class="bg-gray-200 shadow-xl  rounded-r-3xl mt-0 pl-3 ml-7 pr-16"> 
+                    <div class="flex flex-row-reverse pt-4 pl-10" id="delete">
+                        <i class="fas fa-trash-alt" aria-hidden="true">   
+
+                        </i>
+
+                        
+                    </div>
+                    <div class="block text-2xl pb-3 pt-4">
+                       <p class="font-bold">Hello there ! This is post 4.</p>
+                    </div>
+                    <p>and shredding the strings with such heavy reverb and electronic distortion that they sounded somewhat close to exploding bombs. Especially against the political and historical backdrop this really goes underneath the skin.</p>
+                    <br>
+                    <div class="flex flex-row-reverse pb-5">
+                        <a href="./post.html">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex space-x-24 m-10 w-1/2 mx-96 x1:mx-96">
+            <div class="flexbox">
+                <div class="flex items-center ml-5 br-0">
+                    <h6>Jimi Hendrix</h6>
+                </div>
+                <div class="bg-gray-200 shadow-2xl rounded-r-3xl mt-0 pl-3 ml-7 pr-16"> 
+                    <div class="flex flex-row-reverse pt-4 pl-10" id="delete">
+                        <i class="fas fa-trash-alt" aria-hidden="true">  
+                            
+                        </i>
+
+                        
+                    </div>
+                    <div class="block text-2xl pb-3 pt-4">
+                       <p class="font-bold">Hello there ! This is post 5.</p>
+                    </div>
+                    <!-- TODO: Include Font Awesome icon for delete icon here -->
+                    <div class="flex flex-row-reverse pt-4 pl-10" >
+                    </div>
+                    <p>Jimi Hendrix managed to express himself and the times he lived in, through his guitar. In the time of political and social upheaval, musicians like that are not just mind stirring but soul healing and his distorted and violent backdrop this really goes underneath the skin. </p>
+                    <br>
+                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <div class="flex flex-row-reverse pb-4">
+                        <a href="./post.html">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    
+
+    <script src="../js/header.js"></script>
+   <!-- <script src="../js/bloglist.js"></script> -->
+
+ 
+</body>
+
+</html>
