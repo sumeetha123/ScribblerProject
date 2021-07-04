@@ -1,0 +1,39 @@
+body {
+    background-color: orange;
+}
+
+.flexbox {
+    background-color: white;
+    opacity: 100;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 20px;
+    
+    
+} 
+
+
+/*.flexbox2 {
+    background-color: white;
+    opacity: 100;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 7px;
+    padding-left: 5px;
+    margin-left: 5px;
+    padding-right: 6px;
+
+}
+*/
+
+.NextP {
+    padding-left: 100%;
+    
+}
+
+h6 {
+    font-family: sans-serif,cursive;
+    font-weight: bold;
+}
+
