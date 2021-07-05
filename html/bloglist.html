@@ -8,8 +8,10 @@
 
     <meta charset="utf-8">
     <link href="https://unpkg.com/tailwindcss@2.2.4/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/bloglist.css">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/bloglist.css">
     <script src="https://kit.fontawesome.com/843f31a33f.js" crossorigin="anonymous"></script>
     
     
@@ -23,44 +25,45 @@
     <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
 
     <!-- list of all posts starts here -->
-
     <div class="header">
         
-        <div class="flexButtons">
+        <div class="flexButtons mt-5">
             <div>
-                <button class="topButtons" id="SIGN IN">Sign In</button>
-    
-                    <div id="ModalB" class="Modal">
-                        <div class="Modal-Content">
-                            <span class="close">x</span>
-                            <div class="signin-form">
-                                <form class="form">
-                                    <h1 class="heading">Welcome Back!</h1>
-                                    <hr>
-                                    <label class="labelText">Username</label>
-                                    <input type="text" placeholder="Enter Username" required>
-                                    <label id="password1">Password</label>
-                                    <input type="password" placeholder="Enter Password" required>
-                                    <button class="submit-butt">Sign In</button>
-                                    <div class="login-form">
-                                        <h5 class="login">Not a member?</h5>
-                                        <span>
-                                            <a class="SignUp" href="#">Sign Up</a>
-                                        </span>
-                                    </div>
-                                </form>
-                            </div>
+                <button class="topButtons button" id="SIGN IN">Sign In</button>
+                
+                <div id="ModalB" class="Modal">
+                    <div class="Modal-Content">
+                        <span class="close">x</span>
+                        <div class="signin-form">
+                            <form class="form">
+                                <h1 class="heading headng">Welcome Back!</h1>
+                                <hr>
+                                <label class="labelText">Username</label>
+                                <input type="text" placeholder="Enter Username" required>
+                                <label id="password1">Password</label>
+                                <input type="password" placeholder="Enter Password" required>
+                                <button class="submit-butt">Sign In</button>
+                                <div class="login-form">
+                                    <h4 class="login">Not a member?</h5>
+                                    <span>
+                                        <a class="SignUp" href="#">Sign Up</a>
+                                    </span>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
+            </div>
             <div>
-                <button class="topButtons" id="SIGN UP">Sign Up</button>
+                    
+                <button class="topButtons button" id="SIGN UP">Sign Up</button>
+
                 <div id="ModalA" class="Modal">
-                    <div class="Modal-Content">
+                    <div class="Modal-Content pd-10 mt-10 mb-10">
                         <span class="close">x</span>
-                        <div class="signup-form">
+                        <div class="signup-form pb-5 " >
                             <form class="form" id="form">
-                                <h1 class="heading">Get Started</h1>
+                                <h1 class="heading headng">Get Started</h1>
                                 <hr>
                                 <label class="labelText">Full Name</label>
                                 <input type="text" placeholder="Enter Full Name" required>
@@ -68,7 +71,7 @@
                                 <input type="text" placeholder="Enter Username" required>
                                 <label id="password" class="labelText">Password</label>
                                 <input type="password" placeholder="Enter Password" required>
-                                <label class="labelText" id="confirm-password">confirm-password</label>
+                                <label class="labelText" id="confirm-password">Confirm password</label>
                                 <input type="password" placeholder="Confirm Password" required>
                                 <button class ="submit-butt">Sign Up</button>
                             </form>
@@ -76,13 +79,15 @@
                     </div>
                 </div>
             </div>
-            
+        
 
         </div>
-        <a id="pageTitle" class="logo-title" >ScriBBler</a>
-        <p class="middleText">Explore. Imagine. Create</p>
+        <a id="pageTitle" class="logo-title mt-5 pl-2">ScriBBler</a>
+        <p class="middleText pl-2">Explore. Imagine. Create</p>
     </div>
 
+
+     
     <div class="bloglist-content">
         <div class="flex space-x-24 m-10">
             <div class="flexbox">
@@ -90,9 +95,26 @@
                     <h6>Jimi Hendrix</h6>
                 </div>
                 <div class="bg-gray-200 shadow-xl rounded-r-3xl mt-0  pl-3 ml-7 pr-16"> 
-                    <div class="flex flex-row-reverse pt-4 pl-10" id="delete">
+                    <div class="flex flex-row-reverse pt-4 pl-10" id="delete-btn">
                         
                         <i class="fas fa-trash-alt" aria-hidden="true"> 
+                            
+                            <div id="blog-postmodal" class="delete-modal">
+                                <div class="Modal-Content Blog-Content">
+                                    
+                                    <div class="Delete-form formdel" >
+                                        
+                                            <h3 class="heading">Are you sure you want to delete this post?</h3>
+                                            <br>
+                                            <div class="deletebutt">
+                                            <button  type="button" class="Yes-btn">Yes</button>
+                                            <button type="button" class="No-btn" onclick="location.reload();">No</button>
+                                            </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
                             
                         </i>
 
@@ -118,8 +140,23 @@
                     <h6>Jimi Hendrix</h6>
                 </div>
                 <div class="bg-gray-200 shadow-xl rounded-r-3xl mt-0 pl-3 ml-7 pr-16"> 
-                    <div class="flex flex-row-reverse pt-4 pl-10" id="delete">
-                        <i class="fas fa-trash-alt" aria-hidden="true"> 
+                    <div class="flex flex-row-reverse pt-4 pl-10"id="delete-btn1">
+                        <i class="fas fa-trash-alt" aria-hidden="true" > 
+                            <div id="blog-postmodal1" class="delete-modal">
+                                <div class="Modal-Content Blog-Content">
+                                    
+                                    <div class="Delete-form formdel" >
+                                            <h3 class="heading">Are you sure you want to delete this post?</h3>
+                                            <br>
+                                            <div class="deletebutt">
+                                            <button  type="button" class="Yes-btn">Yes</button>
+                                            <button type="button" class="No-btn" onclick="location.reload();">No</button>
+                                            </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
 
                             
                         </i>
@@ -146,9 +183,26 @@
                     <h6>Jimi Hendrix</h6>
                 </div>
                 <div class="bg-gray-200 shadow-2xl rounded-r-3xl mt-0 pl-3 ml-7 pr-16"> 
-                    <div class="flex flex-row-reverse pt-4 pl-10" id="delete">
+                    <div class="flex flex-row-reverse pt-4 pl-10" id="delete-btn2">
                         <i class="fas fa-trash-alt" aria-hidden="true"> 
-                            
+                          
+                                <div id="blog-postmodal2" class="delete-modal">
+                                    <div class="Modal-Content Blog-Content">
+                                        
+                                        <div class="Delete-form formdel" >
+                                            
+                                                <h3 class="heading">Are you sure you want to delete this post?</h3>
+                                                <br>
+                                                <div class="deletebutt">
+                                                <button  type="button" class="Yes-btn">Yes</button>
+                                                <button type="button" class="No-btn" onclick="location.reload();">No</button>
+                                                </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+    
                         </i>
 
                         
@@ -170,9 +224,26 @@
                     <h6>Jimi Hendrix</h6>
                 </div>
                 <div class="bg-gray-200 shadow-xl  rounded-r-3xl mt-0 pl-3 ml-7 pr-16"> 
-                    <div class="flex flex-row-reverse pt-4 pl-10" id="delete">
+                    <div class="flex flex-row-reverse pt-4 pl-10" id="delete-btn3">
                         <i class="fas fa-trash-alt" aria-hidden="true">   
-
+                           
+                                <div id="blog-postmodal3" class="delete-modal">
+                                    <div class="Modal-Content Blog-Content">
+                                        
+                                        <div class="Delete-form formdel" >
+                                            
+                                                <h3 class="heading">Are you sure you want to delete this post?</h3>
+                                                <br>
+                                                <div class="deletebutt">
+                                                <button  type="button" class="Yes-btn">Yes</button>
+                                                <button type="button" class="No-btn" onclick="location.reload();">No</button>
+                                                </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+     
                         </i>
 
                         
@@ -197,9 +268,25 @@
                     <h6>Jimi Hendrix</h6>
                 </div>
                 <div class="bg-gray-200 shadow-2xl rounded-r-3xl mt-0 pl-3 ml-7 pr-16"> 
-                    <div class="flex flex-row-reverse pt-4 pl-10" id="delete">
+                    <div class="flex flex-row-reverse pt-4 pl-10" id="delete-btn4">
                         <i class="fas fa-trash-alt" aria-hidden="true">  
-                            
+                                <div id="blog-postmodal4" class="delete-modal">
+                                    <div class="Modal-Content Blog-Content">
+                                        
+                                        <div class="Delete-form formdel" >
+                                        
+                                                <h3 class="heading">Are you sure you want to delete this post?</h3>
+                                                <br>
+                                                <div class="deletebutt">
+                                                <button  type="button" class="Yes-btn">Yes</button>
+                                                <button type="button" class="No-btn" onclick="location.reload();">No</button>
+                                                </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+    
                         </i>
 
                         
@@ -227,7 +314,7 @@
     
 
     <script src="../js/header.js"></script>
-   <!-- <script src="../js/bloglist.js"></script> -->
+    <script src="../js/bloglist.js"></script> 
 
  
 </body>
