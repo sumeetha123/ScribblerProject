@@ -1,4 +1,4 @@
-//functionality for Sign Up Button
+//functionality for  delete Button
 var DelModal = document.getElementById("blog-postmodal");
 var DelModal1 = document.getElementById("blog-postmodal1");
 var DelModal2 = document.getElementById("blog-postmodal2");
@@ -32,6 +32,7 @@ delbtn3.onclick = function () {
 delbtn4.onclick = function () {
     DelModal4.style.display = "block";
 }
+
 
 
 
