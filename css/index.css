@@ -17,7 +17,8 @@ html{
 .Post-but {
     border-radius: 10px;
     border-style: solid;
-    border-color: rgb(228, 220, 115);
+    background-color: rgba(250, 176, 17, 0.932);
+    border-color: rgba(253, 237, 10, 0.438);
     font-weight: 650;
     font-size: 90%;
     margin: 10px;
