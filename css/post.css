@@ -117,3 +117,8 @@ html {
     background-color: white;
 
 }
+
+.Newclass {
+    border-radius: 4px;
+    border-color: black;
+}
