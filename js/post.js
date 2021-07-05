@@ -1,10 +1,14 @@
+//code for comments button
 function addComments(id) {
     var addEventName = id.value + "<br>";
     var commS = document.getElementById('userComments');
+    commS.value=commS.defaultValue;
     var commS = document.getElementById('addEventNames');
     commS.innerHTML +=  '<div class="Out-comm"><p class="Out-P">' + addEventName + "</p></div>";
-    commS.value=commS.defaultValue;
+    
 }
+
+//code for like button
 var numberOfClicks=0;
 function postLiked(){
     document.getElementById("likeBlog").innerHTML = 
@@ -12,7 +16,7 @@ function postLiked(){
     numberOfClicks += 1;
     if(numberOfClicks!=0) {
         if (numberOfClicks==1){
-            document.getElementById('LikeCount').innerHTML = numberOfClicks + "person likes this!";
+            document.getElementById('likeCount').innerHTML = numberOfClicks + "person likes this!";
 
         }
         else {
@@ -22,8 +26,23 @@ function postLiked(){
 }
 
 
-/*for editing paragraph 
+//for editing paragraph 
 function Edit() {
-    var Paraedit = document.getElementById('edit').innerHTML =
-    Paraedit.contentEditable="false";
-} */
+    document.getElementById("EditBlog").innerHTML = 
+    "Edit <i class='fas fa-edit'></i>"
+
+} 
+
+function saveEdits() {
+    var editElem = document.getElementById("edit");
+    editElem.contentEditable="true";
+    var userVersion = editElem.innerHTML;
+    localStorage.userEdits = userVersion;
+    document.getElementById("EditBlog").innerHTML =
+    "Save <i class='fas fa-save'></i>"
+}
+
+function checkEdits() {
+    if(localStorage.userEdits!=null)
+    document.getElementById("edit").innerHTML = localStorage.userEdits;
+} 
