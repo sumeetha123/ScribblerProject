@@ -25,24 +25,16 @@ function postLiked(){
     }
 }
 
-
-//for editing paragraph 
 function Edit() {
+    
     document.getElementById("EditBlog").innerHTML = 
-    "Edit <i class='fas fa-edit'></i>"
-
-} 
-
-function saveEdits() {
-    var editElem = document.getElementById("edit");
+    "Save <i class='fas fa-save'></i>" ;
+     var editElem = document.getElementById("edit");
     editElem.contentEditable="true";
     var userVersion = editElem.innerHTML;
     localStorage.userEdits = userVersion;
-    document.getElementById("EditBlog").innerHTML =
-    "Save <i class='fas fa-save'></i>"
-}
 
-function checkEdits() {
-    if(localStorage.userEdits!=null)
-    document.getElementById("edit").innerHTML = localStorage.userEdits;
 } 
+
+
+
