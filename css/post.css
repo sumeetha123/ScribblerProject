@@ -1,22 +1,27 @@
+/* styles for classes and tags that we included in post.html page */
+
 html {
     background-color: white;
 }
 
 .Post-heading {
     font-family: sans-serif;
-    line-height: 4px;
+    line-height: 5px;
     text-align: center;
     margin-top: 3.5rem;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: bold;
     font-style: normal;
+    
 }
 
 .Post-top {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     font-size: 20px;
     font-family: 'Marck Script',cursive;
+    font-weight: 800;
     margin-left: 70px;
     margin-right: 70px;
     padding-left: 20px;
@@ -33,6 +38,7 @@ html {
     margin-right: 70px;
     margin-bottom: 20px;
     text-align: justify;
+    
 }
 
 .Like {
@@ -53,14 +59,14 @@ html {
 .Edit {
     background-color: rgb(255, 49, 83);
     font-weight: bold;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 30px;
     padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 2px;
     color: white;
     margin-top: 30px;
     margin-left: 70px;
     border: none;
+    
 }
 
 .LikeC {
